@@ -1,20 +1,13 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import { Appearance } from "react-native";
+import Lab1_Bai1 from "./lab1/screens/lab1_bai1";
+import Lab1_Bai2 from "./lab1/screens/lab1_bai2";
+import Lab2_Bai1 from "./lab2/screens/Main";
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+const App = () => {
+  Appearance.setColorScheme("light");
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+  return <Lab2_Bai1 />;
+};
+
+export default App;
