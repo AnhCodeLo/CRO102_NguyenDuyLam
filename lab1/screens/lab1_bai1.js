@@ -1,8 +1,9 @@
 import React from "react";
-import { SafeAreaView, View, Text, Alert } from "react-native";
+import { SafeAreaView, View, Text, Alert,} from "react-native";
 import CustomHeader from "../components/CustomHeader";
 
 const Lab1_Bai1 = () => {
+
   const handleBackPress = () => {
     Alert.alert("Quay lại");
   };
@@ -33,6 +34,15 @@ const Lab1_Bai1 = () => {
         onBackPress={handleBackPress}
         onProfilePress={handleProfilePress}
       />
+
+      {/* Header 3 */}
+      
+        <CustomHeader
+        title="Tin Tức"
+        onBackPress={handleBackPress}
+        onProfilePress={handleProfilePress}
+      />
+      
 
       <View style={{ padding: 20 }}>
         <Text>Nội dung chính của ứng dụng</Text>
